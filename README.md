@@ -26,3 +26,6 @@ Since your code uses lucide-react for icons and Tailwind CSS for styling, you ne
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init
 
+## To run 
+- npm start
+
