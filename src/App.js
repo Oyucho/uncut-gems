@@ -33,7 +33,7 @@ export default function LandingPage() {
       <section className="relative h-[600px] flex items-center px-6">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
+            src="https://www.kenyanews.go.ke/wp-content/uploads/2023/11/IMG_1692303248279.jpg"
             alt="Women empowerment"
             className="w-full h-full object-cover grayscale"
           />
@@ -73,112 +73,145 @@ export default function LandingPage() {
         </div>
       </section>
 
+
       {/* Latest Updates */}
-      <section className="px-6 py-20">
-        <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
-          Latest Updates
-        </h2>
+<section className="px-6 py-20">
+  <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
+    Latest Updates
+  </h2>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2"
-              alt="Helping today"
-              className="w-full h-[400px] object-cover rounded-lg"
-            />
-            <div className="absolute inset-0 bg-red-600/30 rounded-lg"></div>
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column: Image */}
+    <div className="relative">
+      <img
+        src="https://www.unfpa.org/modules/custom/unfpa_global_dashboard/images/fgm-dashboard-image.jpg"
+        alt="Helping today"
+        className="w-full h-[400px] object-cover rounded-lg"
+      />
+      {/* Semi-transparent Overlay */}
+      <div className="absolute inset-0 bg-red-600/30 rounded-lg"></div>
+      
+    </div>
 
-            <div className="absolute top-8 left-8">
-              <div className="bg-red-600 text-white px-4 py-2 rounded">
-                <h3 className="font-bold text-xl">Mission</h3>
-              </div>
-            </div>
+<div className="bg-white p-8 max-w-xl mx-auto relative z-10 rounded-lg shadow-lg">
+  <h3 className="text-2xl font-bold mb-4">Helping Today</h3>
 
-            <div className="bg-white p-8 max-w-xl mx-auto -mt-20 relative z-10 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4">Helping Today</h3>
-              <p>
-                Our mission is simple: to help girls and women achieve greater
-                heights by empowering them with the gift of education. And we'll
-                keep doing everything we can to make this dream a reality.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* Mission Badge */}
+  <div className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg mb-6 inline-block">
+    <h3 className="font-bold text-xl">Mission</h3>
+  </div>
+  <p className="text-base leading-7 text-gray-700">
+    Our company’s mission is to help girls to live like any other person, enjoying her rights as a girl and being treated with dignity. iCut will help them escape these dangerous practices claimed to be cultural, allowing the girls to live freely. We plan to strengthen our weaknesses and work with society to eliminate harmful practices and reach out to every girl globally.
+  </p>
+</div>
 
+  </div>
+</section>
+
+
+
+  
       {/* Newsletter */}
-      <section className="bg-gray-100 px-6 py-20">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-red-600 mb-6">Newsletter</h2>
-          <div className="flex gap-4">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-red-600"
-            />
-            <button className="bg-red-600 text-white px-8 py-3 rounded-md hover:bg-red-700 whitespace-nowrap">
-              Yes, Update!
-            </button>
-          </div>
-        </div>
-      </section>
+<section className="bg-gray-100 px-6 py-20">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl font-bold text-red-600 mb-6">Newsletter</h2>
+    {/* Flex container for the text, input, and button */}
+    <div className="flex items-center justify-center gap-4">
+      {/* Text */}
+      <span className="text-lg text-gray-700 mr-4">
+        Sign up for our newsletter and stay on the cutting edge of the effort to eradicate FGM.
+      </span>
+      
+      {/* Email Input */}
+      <input
+        type="email"
+        placeholder="email@address.com"
+        className="w-80 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-red-600 shadow-md"
+        style={{
+          fontFamily: 'Marco, sans-serif',
+          fontSize: '20px',
+          lineHeight: '36px',
+          color: '#0A1225',
+          letterSpacing: '0px',
+          opacity: '1',
+        }}
+      />
+      
+      {/* Submit Button */}
+      <button className="bg-red-600 text-white px-8 py-3 rounded-md hover:bg-red-700 transition-all whitespace-nowrap">
+        Stay Updated!
+      </button>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white px-6 py-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-            <div>
-              <h3 className="font-bold text-lg mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a className="hover:text-red-600">About Us</a>
-                </li>
-                <li>
-                  <a className="hover:text-red-600">Blog</a>
-                </li>
-              </ul>
-            </div>
+  <div className="max-w-6xl mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16 items-center">
+      {/* Resources Section */}
+      <div>
+        <h3 className="font-bold text-lg mb-4">Resources</h3>
+        <ul className="space-y-2">
+          <li>
+            <a className="hover:text-red-600">About Us</a>
+          </li>
+          <li>
+            <a className="hover:text-red-600">Blog</a>
+          </li>
+        </ul>
+      </div>
 
-            <div>
-              <h3 className="font-bold text-lg mb-4">Organization</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a className="hover:text-red-600">Partners</a>
-                </li>
-                <li>
-                  <a className="hover:text-red-600">Press</a>
-                </li>
-                <li>
-                  <a className="hover:text-red-600">Contact Us</a>
-                </li>
-              </ul>
-            </div>
+      {/* Organization Section */}
+      <div>
+        <h3 className="font-bold text-lg mb-4">Organization</h3>
+        <ul className="space-y-2">
+          <li>
+            <a className="hover:text-red-600">Partners</a>
+          </li>
+          <li>
+            <a className="hover:text-red-600">Press</a>
+          </li>
+          <li>
+            <a className="hover:text-red-600">Contact Us</a>
+          </li>
+        </ul>
+      </div>
 
-            <div>
-              <h3 className="font-bold text-lg mb-4">Social</h3>
-              <div className="flex space-x-4">
-                <a className="hover:text-red-600">
-                  <Linkedin className="h-6 w-6" />
-                </a>
-                <a className="hover:text-red-600">
-                  <Twitter className="h-6 w-6" />
-                </a>
-                <a className="hover:text-red-600">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a className="hover:text-red-600">
-                  <Instagram className="h-6 w-6" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center space-x-2">
-            <Gem className="h-8 w-8 text-red-600" />
-            <span className="font-bold text-2xl">UNCUT GEMS</span>
-          </div>
+      {/* Social Section */}
+      <div>
+        <h3 className="font-bold text-lg mb-4">Social</h3>
+        <div className="flex space-x-4">
+          <a className="hover:text-red-600">
+            <Linkedin className="h-6 w-6" />
+          </a>
+          <a className="hover:text-red-600">
+            <Twitter className="h-6 w-6" />
+          </a>
+          <a className="hover:text-red-600">
+            <Facebook className="h-6 w-6" />
+          </a>
+          <a className="hover:text-red-600">
+            <Instagram className="h-6 w-6" />
+          </a>
         </div>
-      </footer>
+      </div>
+
+      {/* Logo Section */}
+      <div className="flex justify-center md:justify-end items-center">
+        <img
+          src="/logo.svg"
+          alt="Logo"
+          className="h-48 w-auto opacity-100" // Double the height (from h-24 to h-48)
+        />
+      </div>
+    </div>
+  </div>
+</footer>
+
+
     </div>
   );
 }
