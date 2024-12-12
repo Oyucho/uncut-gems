@@ -13,17 +13,22 @@ export default function LandingPage() {
     <div className="min-h-screen">
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4">
-        <div className="flex items-center space-x-2">
-          <Gem className="h-6 w-6 text-red-600" />
-          <span className="font-bold text-xl">UNCUT GEMS</span>
-        </div>
+       
+        <div className="flex justify-center md:justify-end items-center">
+        <img
+          src="/logo.svg"
+          alt="Logo"
+          className="h-24 w-auto opacity-100"
+        />
+      </div>
+        
 
         <div className="flex items-center space-x-8">
-          <a className="hover:text-red-600">About Us</a>
-          <a className="hover:text-red-600">Blog</a>
-          <a className="hover:text-red-600">Events</a>
-          <a className="hover:text-red-600">Contact</a>
-          <button className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700">
+          <a className="hover:text-[#E3010F]">About Us</a>
+          <a className="hover:text-[#E3010F]">Blog</a>
+          <a className="hover:text-[#E3010F]">Events</a>
+          <a className="hover:text-[#E3010F]">Contact</a>
+          <button className="bg-[#E3010F] text-white px-6 py-2 rounded-md hover:bg-red-700">
             Donate
           </button>
         </div>
@@ -56,7 +61,7 @@ export default function LandingPage() {
       </section>
 
       {/* Mission Statement */}
-      <section className="bg-red-600 text-white px-6 py-20">
+      <section className="bg-[#E3010F] text-white px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             We're Helping Girls and Women Around the world
@@ -76,7 +81,7 @@ export default function LandingPage() {
 
       {/* Latest Updates */}
 <section className="px-6 py-20">
-  <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">
+  <h2 className="text-3xl font-bold text-[#E3010F] mb-12 text-center">
     Latest Updates
   </h2>
 
@@ -97,7 +102,7 @@ export default function LandingPage() {
   <h3 className="text-2xl font-bold mb-4">Helping Today</h3>
 
   {/* Mission Badge */}
-  <div className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg mb-6 inline-block">
+  <div className="bg-[#E3010F] text-white px-6 py-3 rounded-lg shadow-lg mb-6 inline-block">
     <h3 className="font-bold text-xl">Mission</h3>
   </div>
   <p className="text-base leading-7 text-gray-700">
@@ -114,7 +119,7 @@ export default function LandingPage() {
       {/* Newsletter */}
 <section className="bg-gray-100 px-6 py-20">
   <div className="max-w-4xl mx-auto text-center">
-    <h2 className="text-3xl font-bold text-red-600 mb-6">Newsletter</h2>
+    <h2 className="text-3xl font-bold text-[#E3010F] mb-6">Newsletter</h2>
     {/* Flex container for the text, input, and button */}
     <div className="flex items-center justify-center gap-4">
       {/* Text */}
@@ -126,7 +131,7 @@ export default function LandingPage() {
       <input
         type="email"
         placeholder="email@address.com"
-        className="w-80 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-red-600 shadow-md"
+        className="w-80 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-[#E3010F] shadow-md"
         style={{
           fontFamily: 'Marco, sans-serif',
           fontSize: '20px',
@@ -138,7 +143,7 @@ export default function LandingPage() {
       />
       
       {/* Submit Button */}
-      <button className="bg-red-600 text-white px-8 py-3 rounded-md hover:bg-red-700 transition-all whitespace-nowrap">
+      <button className="bg-[#E3010F] text-white px-8 py-3 rounded-md hover:bg-red-700 transition-all whitespace-nowrap">
         Stay Updated!
       </button>
     </div>
@@ -148,7 +153,7 @@ export default function LandingPage() {
 
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white px-6 py-20">
+      <footer className="bg-white text-black px-6 py-20">
   <div className="max-w-6xl mx-auto">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16 items-center">
       {/* Resources Section */}
@@ -156,10 +161,10 @@ export default function LandingPage() {
         <h3 className="font-bold text-lg mb-4">Resources</h3>
         <ul className="space-y-2">
           <li>
-            <a className="hover:text-red-600">About Us</a>
+            <a className="hover:text-[#E3010F]">About Us</a>
           </li>
           <li>
-            <a className="hover:text-red-600">Blog</a>
+            <a className="hover:text-[#E3010F]">Blog</a>
           </li>
         </ul>
       </div>
@@ -169,13 +174,13 @@ export default function LandingPage() {
         <h3 className="font-bold text-lg mb-4">Organization</h3>
         <ul className="space-y-2">
           <li>
-            <a className="hover:text-red-600">Partners</a>
+            <a className="hover:text-[#E3010F]">Partners</a>
           </li>
           <li>
-            <a className="hover:text-red-600">Press</a>
+            <a className="hover:text-[#E3010F]">Press</a>
           </li>
           <li>
-            <a className="hover:text-red-600">Contact Us</a>
+            <a className="hover:text-[#E3010F]">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -184,16 +189,16 @@ export default function LandingPage() {
       <div>
         <h3 className="font-bold text-lg mb-4">Social</h3>
         <div className="flex space-x-4">
-          <a className="hover:text-red-600">
+          <a className="hover:text-[#E3010F]">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a className="hover:text-red-600">
+          <a className="hover:text-[#E3010F]">
             <Twitter className="h-6 w-6" />
           </a>
-          <a className="hover:text-red-600">
+          <a className="hover:text-[#E3010F]">
             <Facebook className="h-6 w-6" />
           </a>
-          <a className="hover:text-red-600">
+          <a className="hover:text-[#E3010F]">
             <Instagram className="h-6 w-6" />
           </a>
         </div>
